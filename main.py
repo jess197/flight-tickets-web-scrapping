@@ -12,7 +12,7 @@ import os
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 to_location = 'NYC'
-url = 'https://www.kayak.com.br/flights/CWB-{to_location}/2023-02-19/2023-03-29/2adults?sort=price_a'.format(to_location=to_location)
+url = 'https://www.kayak.com.br/flights/CWB-{to_location}/2023-06-15/2023-06-29/2adults?sort=price_a'.format(to_location=to_location)
 
 driver.get(url)
 wait = WebDriverWait(driver, 100)

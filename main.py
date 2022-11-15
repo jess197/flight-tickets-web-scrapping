@@ -56,16 +56,13 @@ for WebElement in flight_rows:
 
 
 for i in range(len(lst_prices)):
-    price = str(lst_prices[i]).strip('[]').lstrip().rstrip()
-    going_time = str(lst_depart_time[i]).strip('[]').lstrip().rstrip()+" - "+str(lst_arrival_time[i]).strip('[]').lstrip().rstrip()
-    company_name = str(lst_company_names[i]).strip('[]').lstrip().rstrip()
-    print(company_name+' - '+price+' - '+going_time)
+   price = 'Price: '+str(lst_prices[i]).strip('[]').lstrip().rstrip()
+   going_time = 'Departure/Arrival: '+str(lst_going_time[i]).strip('[]').lstrip().rstrip().replace('\n',' ')
+   company_name = 'Company Name: '+str(lst_company_names[i]).strip('[]').lstrip().rstrip()
+   print(company_name+' - '+price+' - '+going_time)
 
-#print(lst_company_names)
-#print(lst_prices)
-#print(lst_depart_time)
-#print(lst_arrival_time)
-#print(lst_going_time)
+
+
 
 
 
